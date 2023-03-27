@@ -59,14 +59,30 @@ Rails.application.routes.draw do
   get("/roll/6/6", { :controller => "dice", :action => "six_six" })
 
   # /roll/1/4
+  get("/roll/1/4", { :controller => "dice", :action => "one_four" })
   # /roll/2/4
+  get("/roll/2/4", { :controller => "dice", :action => "two_four" })
   # /roll/3/4
+  get("/roll/3/4", { :controller => "dice", :action => "three_four" })
   # /roll/4/4
-  # /roll/1/8
-  # /roll/2/8
-  # /roll/1/10
-  # /roll/2/10
-  # /roll/1/20
-  # /roll/2/20
+  get("/roll/4/4", { :controller => "dice", :action => "four_four" })
 
+  # /roll/1/8
+  get("/roll/1/8", { :controller => "dice", :action => "one_eight" })
+  # /roll/2/8
+  get("/roll/2/8", { :controller => "dice", :action => "two_eight" })
+  # /roll/3/8
+  get("/roll/3/8", { :controller => "dice", :action => "three_eight" })
+
+  # /roll/1/10
+  get("/roll/1/10", { :controller => "dice", :action => "one_ten" })
+  # /roll/2/10
+  get("/roll/2/10", { :controller => "dice", :action => "two_ten" })
+
+  # /roll/1/20
+  get("/roll/1/20", { :controller => "dice", :action => "one_twenty" })
+  # /roll/2/20
+  get("/roll/2/20", { :controller => "dice", :action => "two_twenty" })
+  # /roll/3/20
+  get("/roll/3/20", { :controller => "dice", :action => "three_twenty" })
 end
